@@ -1,3 +1,11 @@
+body{
+  margin:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 10%, 95%);
+}
 #container{
   font-family: arial, sans-serif;
   background-color: hsl(0, 10%, 15%);
@@ -7,8 +15,12 @@
 }
 #display{
   width: 100%;
-  padding: 20px
-  
+  padding: 20px;
+  font-size: 5rem;
+  text-align: left;
+  border: none;
+  background-color: hsl(0, 10%, 20%);
+
 }
 #keys {
   display: grid;
@@ -26,4 +38,19 @@ button{
   font-size: 3rem;
   font-weight: bold;
   cursor: pointer;
+}
+button:hover{
+  background-color: hsl(0, 10%, 40%);
+}
+button:active{
+  background-color: hsl(0, 10%, 70%);
+}
+.operator-btn{
+  background-color: hsl(36, 96%, 50%);
+}
+.operator-btn:hover{
+  background-color:hsl(36, 96%, 65%) ;
+}
+.operator-btn:active{
+  background-color:hsl(36, 96%, 90%) ;
 }
